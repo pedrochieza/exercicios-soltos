@@ -1,0 +1,194 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formulário</title>
+	<link href="aula8.css" rel="stylesheet">
+</head>
+<body>
+	<h1>Formulários</h1>
+	
+	<h2>Cadastro de Pedidos</h2>
+		
+	<form id="pedidos" name="pedidos" method="post" autocomplete="off" action="mailto:pedrochiezasilva@yahoo.com.br?subject=Pedidos" enctype="text/plain">
+		
+		<fieldset>
+			<legend>Dados Pessoais</legend>
+			
+			<p>
+				<label for="nome">Nome:</label>
+				<input id="nome" type="text" name="nome" placeholder="Digite seu nome..." required="required" autofocus="autofocus" maxlength="65"/>
+					
+			</p>
+				
+			<p>
+				<label for="telefone">Telefone:</label>
+				<input id="telefone" type="number" name="telefone" placeholder="Digite seu nº de telefone..." maxlength="11"/>
+			</p>
+				
+			<p>
+				<label for="email">E-mail:</label>
+				<input id="email" type="email" name="email" required="required" placeholder="Digite seu e-mail..."/>
+			</p>
+				
+			<p>
+				<label for="idade">Idade:</label>
+				<input id="idade" type="number" min="14" name="idade" required="required" placeholder="Digite sua idade..."/>
+			</p>
+				
+			<p>
+				<label for="cartao">Cartão (Débito ou Crédito):</label>
+				<input id="cartao" type="numero"  name="cartao" maxlength="16" required="required" placeholder="Digite o n° de seu cartão"/>
+				<label for="vencimento">Vencimento:</label>
+				<input id="vencimento" type="date"  name="vencimento" maxlength="5" required="required" placeholder="Digite a data de vencimento"/>
+			</p>
+				
+			<p>
+				<label for="endereco">Endereço:</label>
+				<input id="endereco" type="endereco"  name="endereco" required="required" placeholder="Digite seu endereço..."/>
+			</p>
+			
+		</fieldset>
+			
+		<fieldset id="food">
+			
+			<legend>Fast Food Favorito: </legend>
+					
+			<p>
+				<input id="mc" name="mc" type="checkbox" value="mc" checked="checked"/>
+				<label for="mc">Mc Donald's</label>	
+							 
+				<input id="bk" name="bk" type="checkbox" value="bk"/>
+				<label for="bk">Burger King</label>	
+
+				<input id="hb" name="hb" type="checkbox" value="hb"/>
+				<label for="hb">Habib's</label>	
+
+				<input id="jr" name="jr" type="checkbox" value="jr"/>
+				<label for="jr">Jerônimo</label>	
+
+				<input id="sb" name="sb" type="checkbox" value="sb"/>
+				<label for="sb">Subway</label>	
+
+				<input id="rg" name="rg" type="checkbox" value="rg"/>
+				<label for="rg">Ragazzo</label>
+						
+				<input id="kfc" name="kfc" type="checkbox" value="kfc"/>
+				<label for="kfc">KFC</label>
+			</p>
+				
+		</fieldset>
+			
+		<fieldset id="credenciais">
+			
+			<legend>Credenciais:</legend>
+				
+			<p>
+				<label for="cartao">Cor do cartão:</label> 
+				<input id="cartao" name="cartao" type="color" required="required"/>
+			</p>
+				
+			<p>
+				<label for="senha">Senha padrão:</label>
+				<input id="senha" name="senha" type="password"  minlength="6" maxlength="8" size="12" required="required"/>
+			</p>
+				
+			<p>
+				
+				<label for="dia">Entrevista dia:</label> 
+				<input id="dia" name="dia" type="date" required="required" />
+			</p>
+				
+			<p>
+				<label for="local">Local do Restaurante:</label>
+				<select id="local" name="local" required="required">
+					
+					<option value=""> Opções...</option>
+					<optgroup label="Região Norte">
+						<option value="ZN">Santana</option>
+						<option value="ZN">Tucuruvi</option>
+						<option value="ZN">Brasilândia</option>
+						<option value="ZN">Mandaqui</option>
+						<option value="ZN">Limão</option>
+					</optgroup>
+						
+					<optgroup label="Região Leste">
+						<option value="ZL">Itaquera</option>
+						<option value="ZL">Tatuapé</option>
+						<option value="ZL">Mooca</option>
+						<option value="ZL">Guaianases</option>
+						<option value="ZL">Brás</option>
+					</optgroup>
+						
+					<optgroup label="Região Sul">
+						<option value="ZS">Ipiranga</option>
+						<option value="ZS">Capão Redondo</option>
+						<option value="ZS">Jabaquara</option>
+						<option value="ZS">Santo Amaro</option>
+						<option value="ZS">Moema</option>
+					</optgroup>
+						
+					<optgroup label="Região Oeste">
+						<option value="ZO">Pinheiros</option>
+						<option value="ZO">Morumbi</option>
+						<option value="ZO">Butantã</option>
+						<option value="ZO">Perdizes</option>
+						<option value="ZO">Itaim Bibi</option>
+					</optgroup>
+						
+					<optgroup label="Centro">
+						<option value="ZC">República</option>
+						<option value="ZC">Sé</option>
+						<option value="ZC">Liberdade</option>
+						<option value="ZC">Bom Retiro</option>
+						<option value="ZC">Cambuci</option>
+					</optgroup>
+					
+				</select>
+			</p>
+		</fieldset>
+		
+		<fieldset id="habilidades">
+				
+			<legend>Habilidades:</legend>
+				
+			<p>
+				<label for="comentarios">Comentários...</label><br />
+				<textarea id="comentarios" name="comentarios" rows="4" maxlength="250">Descreva suas habilidades na área...</textarea>
+			</p>
+				
+			<p>
+				<textarea id="contrato" name="contrato" rows="4" maxlength="50">Contrato: ao utilizar esse site você...</textarea> 
+			</p>
+			
+		</fieldset>
+			
+		<fieldset id="atendimento">
+			
+			<legend>Grau de experiência:</legend>
+				
+			<p>
+				<label for="pesquisa">De 0 até 10:</label>
+				<input id="pesquisa" name="pesquisa" type="range" min="0" max="10" step="1" />
+			</p>
+				
+			<p>
+				<label for="anx">Anexe o seu Currículo:</label>
+				<input id="anx" name="anx" type="file"/>
+			</p>
+				
+		</fieldset>
+			
+		<fieldset id="enviar">
+			
+			<legend>Envio dos Dados</legend>
+				
+			<p>			
+				<input id="bt_enviar" type="submit" value="CADASTRAR" />
+				<input id="bt_enviar" type="submit" value="Cópia para o RH..." formaction="mailto:pedrochiezasilva@yahoo.com.br?subject=Dados do Candidato..."/>
+			</p>
+		</fieldset>
+		
+    </form>
+</body>
+</html>
