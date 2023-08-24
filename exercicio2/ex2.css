@@ -1,0 +1,82 @@
+/* CSS - FORMULÁRIO - EXEMPLO01 */
+@charset "utf-8";
+
+body, html {
+   height: 100%;
+   font-size: 18px;
+   background-color: lightcoral;
+   margin-bottom: 400px;  /* Para melhor visualização na aula... */
+}
+h1 {
+    color: #fff;
+    text-align: center;
+}
+h2 {
+    color: #555;
+    text-align: center;
+}
+
+/* FORMULÁRIO 01 */
+
+form#exemplo01 {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #ddd;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+}
+form#exemplo01 input, form#exemplo01 textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+form#exemplo01 textarea {
+    resize: none;
+}
+
+/* FORMULÁRIO 02 */
+
+form#exemplo02 {
+    background-color: #ddd;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+form#exemplo02 fieldset {
+    width: 90%;
+    margin: 0 auto;
+    background-color: beige;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+legend {
+    background-color: brown;
+    font-size: 1.2rem;
+    color: #fff;
+    border: #fff 1.2px solid;
+    padding: 3px;
+    border-radius: 3px;
+}
+form#exemplo02 input, form#exemplo02 textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+form#exemplo02 textarea {
+    resize: none;
+}
+label {
+    color: #555;
+    text-transform: uppercase;
+}
