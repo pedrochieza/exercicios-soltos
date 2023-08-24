@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 2</title>
+    <script src="index.js"></script>
+</head>
+<body>
+        <h1>Calculadora - IMC</h1>
+    
+        <label for="peso">Qual o peso (kg)?</label>
+        <input class="peso" type="number" min="1" max="300"/>
+    
+        <label for="altura">Qual a altura (cm)?</label>
+        <input class="altura" type="number" min="0" max="300" />
+    
+        <button onclick="calculo();">Calcular</button>
+
+        <p>IMC = </p>
+        <div class="resultadoIMC"></div>
+        <p>Classificação = </p>
+        <div class="classificacaoIMC"></div>
+</body>
+</html>
